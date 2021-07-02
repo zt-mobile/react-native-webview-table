@@ -1,0 +1,22 @@
+"use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const make_table_renderer_1 = require("./make-table-renderer");
+exports.makeTableRenderer = make_table_renderer_1.makeTableRenderer;
+exports.makeCustomTableRenderer = make_table_renderer_1.makeCustomTableRenderer;
+const alter_node_1 = __importStar(require("./alter-node"));
+exports.alterNode = alter_node_1.default;
+exports.domToHTML = alter_node_1.domToHTML;
+const HTMLTable_1 = __importStar(require("./HTMLTable"));
+exports.HTMLTable = HTMLTable_1.default;
+exports.defaultTableStylesSpecs = HTMLTable_1.defaultTableStylesSpecs;
+exports.cssRulesFromSpecs = HTMLTable_1.cssRulesFromSpecs;
+var HTMLTable_2 = require("./HTMLTable");
+exports.IGNORED_TAGS = HTMLTable_2.IGNORED_TAGS;
+exports.TABLE_TAGS = HTMLTable_2.TABLE_TAGS;
